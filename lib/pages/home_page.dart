@@ -11,17 +11,18 @@ class HomePage extends StatelessWidget {
         title: const Text('Weather App'),
         actions: [
           IconButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) {
-                      return SearchPage();
-                    },
-                  ),
-                );
-              },
-              icon: const Icon(Icons.search))
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) {
+                    return SearchPage();
+                  },
+                ),
+              );
+            },
+            icon: const Icon(Icons.search),
+          ),
         ],
       ),
       body: Center(
