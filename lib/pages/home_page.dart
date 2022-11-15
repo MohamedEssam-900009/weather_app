@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:weather_app/pages/search_page.dart';
+import 'search_page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});

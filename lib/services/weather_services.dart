@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:http/http.dart' as http;
 
 class WeatherServices {
@@ -6,5 +8,7 @@ class WeatherServices {
         'http://api.weatherapi.com/v1/current.json?key=509947def5c645b9b1b230652220411&q=Egypt&aqi=no');
 
     http.Response response = await http.get(url);
+
+    Map<String, dynamic> data = jsonDecode(response.body);
   }
 }
