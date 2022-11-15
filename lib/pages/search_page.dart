@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:weather_app/services/weather_services.dart';
 
 // ignore: must_be_immutable
 class SearchPage extends StatelessWidget {
@@ -18,7 +19,9 @@ class SearchPage extends StatelessWidget {
           child: TextField(
             onSubmitted: (value) {
               cityName = value;
-              debugPrint(value);
+
+              WeatherServices services = WeatherServices();
+              services.getWeather(cityName: cityName!);
             },
             decoration: const InputDecoration(
               hintText: 'Enter a city',
