@@ -7,11 +7,11 @@ void main() {
 }
 
 class WeatherApp extends StatelessWidget {
-  const WeatherApp({super.key});  
+  const WeatherApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(   
+    return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Weather App',
       home: HomePage(),
